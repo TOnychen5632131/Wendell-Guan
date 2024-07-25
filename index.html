@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wendell Guan</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-purple-100 min-h-screen">
+    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-10 text-center">
+        <h1 class="text-5xl font-bold mb-4">Wendell Guan</h1>
+        <p class="text-xl">Product Manager | AI Enthusiast | Tech Innovator</p>
+    </header>
+
+    <nav class="bg-white shadow-md p-4 sticky top-0 z-10">
+        <ul class="flex justify-center space-x-6">
+            <li><button onclick="showTab('about')" class="text-lg font-semibold text-blue-600 border-b-2 border-blue-600">About</button></li>
+            <li><button onclick="showTab('experience')" class="text-lg font-semibold text-gray-600 hover:text-blue-600">Experience</button></li>
+            <li><button onclick="showTab('projects')" class="text-lg font-semibold text-gray-600 hover:text-blue-600">Projects</button></li>
+            <li><button onclick="showTab('skills')" class="text-lg font-semibold text-gray-600 hover:text-blue-600">Skills</button></li>
+            <li><button onclick="showTab('contact')" class="text-lg font-semibold text-gray-600 hover:text-blue-600">Contact</button></li>
+        </ul>
+    </nav>
+
+    <main class="container mx-auto p-6 mt-10">
+        <div id="about" class="tab-content block">
+            <h2 class="text-3xl font-bold mb-6 text-blue-600">About Me</h2>
+            <div class="bg-white rounded-lg shadow-lg p-6 flex items-center space-x-6">
+                <img src="/api/placeholder/150/150" alt="Wendell Guan" class="rounded-full">
+                <p class="text-lg">
+                    Hi, I'm Wendell Guan, a Computer Information Technology student at Purdue University with a perfect 4.0 GPA. 
+                    I'm passionate about AI, product management, and innovative technologies. With experience in both startups and 
+                    tech giants like Tencent and OPPO, I bring a unique blend of technical expertise and business acumen to every project.
+                </p>
+            </div>
+        </div>
+
+        <div id="experience" class="tab-content hidden">
+            <h2 class="text-3xl font-bold mb-6 text-blue-600">Work Experience</h2>
+            <div class="space-y-6">
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-blue-600">Product Manager</h3>
+                    <p class="text-lg text-gray-700">HandleIt AI</p>
+                    <p class="text-gray-600">Jan 2024 - Apr 2024</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-blue-600">Frontend Developer</h3>
+                    <p class="text-lg text-gray-700">OPPO</p>
+                    <p class="text-gray-600">Jun 2023 - Sep 2023</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-blue-600">Product Manager</h3>
+                    <p class="text-lg text-gray-700">Tencent Cloud</p>
+                    <p class="text-gray-600">Nov 2021 - Jun 2022</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-blue-600">Co-founder</h3>
+                    <p class="text-lg text-gray-700">Beijing Fengchao Zhizao Education Technology Co., Ltd.</p>
+                    <p class="text-gray-600">Jun 2020 - Nov 2020</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects" class="tab-content hidden">
+            <h2 class="text-3xl font-bold mb-6 text-blue-600">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-2">HandleIt AI</h3>
+                    <p class="text-gray-700">Led product development and user feedback integration</p>
+                    <a href="#" class="text-blue-600 hover:underline mt-2 inline-flex items-center">Learn more <svg class="ml-1" width="16" height="16" fill="currentColor"><path d="M1 8a1 1 0 011-1h10.586l-4.293-4.293a1 1 0 111.414-1.414l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L12.586 9H2a1 1 0 01-1-1z"></path></svg></a>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-2">Automation Robot AI</h3>
+                    <p class="text-gray-700">Developed demo and optimized user workflows</p>
+                    <a href="#" class="text-blue-600 hover:underline mt-2 inline-flex items-center">Learn more <svg class="ml-1" width="16" height="16" fill="currentColor"><path d="M1 8a1 1 0 011-1h10.586l-4.293-4.293a1 1 0 111.414-1.414l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L12.586 9H2a1 1 0 01-1-1z"></path></svg></a>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-2">3D Printing Course</h3>
+                    <p class="text-gray-700">Planned and executed educational programs for youth</p>
+                    <a href="#" class="text-blue-600 hover:underline mt-2 inline-flex items-center">Learn more <svg class="ml-1" width="16" height="16" fill="currentColor"><path d="M1 8a1 1 0 011-1h10.586l-4.293-4.293a1 1 0 111.414-1.414l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L12.586 9H2a1 1 0 01-1-1z"></path></svg></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="skills" class="tab-content hidden">
+            <h2 class="text-3xl font-bold mb-6 text-blue-600">Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
+                    <svg class="mx-auto mb-4 text-blue-600" width="40" height="40" fill="currentColor"><path d="M10 20a1 1 0 011-1h12a1 1 0 110 2H11a1 1 0 01-1-1zM6 16a1 1 0 011-1h20a1 1 0 110 2H7a1 1 0 01-1-1zM10 12a1 1 0 011-1h12a1 1 0 110 2H11a1 1 0 01-1-1zM6 8a1 1 0 011-1h20a1 1 0 110 2H7a1 1 0 01-1-1z"></path></svg>
+                    <h3 class="text-lg font-semibold">Product Design</h3>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
+                    <svg class="mx-auto mb-4 text-blue-600" width="40" height="40" fill="currentColor"><path d="M20 2a1 1 0 011 1v18.59l4.71-4.7a1 1 0 011.42 1.42l-6.83 6.82a1 1 0 01-1.42 0l-6.83-6.83a1 1 0 011.42-1.42L19 21.59V3a1 1 0 011-1z"></path></svg>
+                    <h3 class="text-lg font-semibold">AI Technology</h3>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
+                    <svg class="mx-auto mb-4 text-blue-600" width="40" height="40" fill="currentColor"><path d="M19 2a1 1 0 011 1v18.59l4.71-4.7a1 1 0 011.42 1.42l-6.83 6.82a1 1 0 01-1.42 0l-6.83-6.83a1 1 0 011.42-1.42L18 21.59V3a1 1 0 011-1z"></path></svg>
+                    <h3 class="text-lg font-semibold">Data Analysis</h3>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
+                    <svg class="mx-auto mb-4 text-blue-600" width="40" height="40" fill="currentColor"><path d="M5 16a3 3 0 10-3 3 3 3 0 003-3zm12-3a3 3 0 10-3 3 3 3 0 003-3zm12 12a3 3 0 10-3 3 3 3 0 003-3zm0-12a3 3 0 10-3 3 3 3 0 003-3zM2 21a5 5 0 015-5h10a5 5 0 015 5v2H2zm15-8a5 5 0 00-5-5 5 5 0 00-5 5zm10 13v-2a7 7 0 00-7-7H7a7 7 0 00-7 7v2a1 1 0 001 1h26a1 1 0 001-1zm-12-16a7 7 0 017-7h0a7 7 0 010 14h0a7 7 0 01-7-7z"></path></svg>
+                    <h3 class="text-lg font-semibold">Project Management</h3>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
+                    <svg class="mx-auto mb-4 text-blue-600" width="40" height="40" fill="currentColor"><path d="M15 20a1 1 0 00.71-1.71L12.41 15H19a1 1 0 000-2h-6.59l3.3-3.29A1 1 0 1014.3 8.3l-5 5a1 1 0 000 1.41l5 5A1 1 0 0015 20z"></path></svg>
+                    <h3 class="text-lg font-semibold">Multimedia Production</h3>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow duration-300">
+                    <svg class="mx-auto mb-4 text-blue-600" width="40" height="40" fill="currentColor"><path d="M4 4a1 1 0 00-1 1v14a1 1 0 001 1h2a1 1 0 001-1V5a1 1 0 00-1-1zM16 4a1 1 0 00-1 1v14a1 1 0 001 1h2a1 1 0 001-1V5a1 1 0 00-1-1zM28 4a1 1 0 00-1 1v14a1 1 0 001 1h2a1 1 0 001-1V5a1 1 0 00-1-1z"></path></svg>
+                    <h3 class="text-lg font-semibold">Communication</h3>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="tab-content hidden">
+            <h2 class="text-3xl font-bold mb-6 text-blue-600">Contact Me</h2>
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <p class="text-lg mb-4">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                <ul class="space-y-2">
+                    <li class="flex items-center"><svg class="mr-2 text-blue-600" width="24" height="24" fill="currentColor"><path d="M21 8a3 3 0 00-3 3v6a3 3 0 00-3 3H7a3 3 0 00-3-3V11a3 3 0 00-3-3V8a5 5 0 015-5h14a5 5 0 015 5z"></path></svg> MeetWendell@Gmail.com</li>
+                    <li class="flex items-center"><svg class="mr-2 text-blue-600" width="24" height="24" fill="currentColor"><path d="M10 9a3 3 0 10-3-3 3 3 0 003 3zm0 2a5 5 0 00-5 5v1a1 1 0 001 1h8a1 1 0 001-1v-1a5 5 0 00-5-5z"></path></svg> (86)13243756923</li>
+                    <li class="flex items-center"><svg class="mr-2 text-blue-600" width="24" height="24" fill="currentColor"><path d="M12 4a9 9 0 00-9 9c0 7.19 9 17 9 17s9-9.81 9-17a9 9 0 00-9-9zM7 13a1 1 0 111-1 1 1 0 01-1 1zm5 5a2 2 0 112-2 2 2 0 01-2 2zm5-5a1 1 0 111-1 1 1 0 01-1 1z"></path></svg> West Lafayette, Indiana, USA</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 text-center mt-10">
+        <p>&copy; 2024 Wendell Guan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => {
+                tab.classList.add('hidden');
+                tab.classList.remove('block');
+            });
+            document.getElementById(tabId).classList.add('block');
+            document.getElementById(tabId).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
